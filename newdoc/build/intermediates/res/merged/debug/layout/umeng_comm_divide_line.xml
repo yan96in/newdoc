@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#E3E3E3" />
+<!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/umeng_comm_divide_line.xml -->

@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.lee.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/fdrrm_plv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"></com.lee.pullrefresh.ui.PullToRefreshListView>
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/f_doc_room_room_list.xml -->

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <RelativeLayout
+        android:id="@+id/acrm_rl_position"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/title_bar"
+        android:background="@null"></RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/acrm_rl_position"
+        android:clickable="true" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/activity_consultation_room_map.xml -->

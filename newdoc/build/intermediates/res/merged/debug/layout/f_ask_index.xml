@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fai_tv_sex"
+                style="@style/Text.Large1.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dip"
+                android:layout_marginTop="12dip"
+                android:text="性别：" />
+
+            <RadioGroup
+                android:id="@+id/fai_rg_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="12dip"
+                android:layout_toRightOf="@+id/fai_tv_sex"
+                android:background="@drawable/bg_input_0_xml"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_0"
+                    style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+                    android:layout_width="50dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="男"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_1"
+                    style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+                    android:layout_width="50dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="女"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/fai_tv_age"
+                style="@style/Text.Large1.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="12dip"
+                android:layout_toRightOf="@+id/fai_rg_sex"
+                android:text="年龄：" />
+
+            <EditText
+                android:id="@+id/fai_et_age"
+                style="@style/Text.Large1.black"
+                android:layout_width="50dip"
+                android:layout_height="24dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="12dip"
+                android:layout_toRightOf="@+id/fai_tv_age"
+                android:background="@drawable/bg_input_0_xml"
+                android:inputType="number"
+                android:padding="2dip" />
+
+            <TextView
+                android:id="@+id/fai_tv_catalog"
+                style="@style/Text.Large1.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fai_tv_sex"
+                android:layout_marginLeft="34dip"
+                android:layout_marginTop="12dip"
+                android:text="咨询科室：" />
+
+            <Button
+                android:id="@+id/fai_btn_catalog"
+                style="@style/Text.Large1.black"
+                android:layout_width="150dip"
+                android:layout_height="24dip"
+                android:layout_below="@+id/fai_tv_sex"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="12dip"
+                android:layout_toRightOf="@+id/fai_tv_catalog"
+                android:background="@drawable/bg_input_0_xml"
+                android:drawableRight="@drawable/ic_select_0"
+                android:padding="2dip"
+                android:paddingRight="5dip"
+                android:text="全部诊室" />
+
+            <TextView
+                android:id="@+id/fai_tv_question"
+                style="@style/Text.Large1.lightgray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fai_tv_catalog"
+                android:layout_marginLeft="34dip"
+                android:layout_marginTop="12dip"
+                android:text="问题描述：" />
+
+            <EditText
+                android:id="@+id/fai_et_question"
+                style="@style/Text.Mid1.darkgray"
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_below="@+id/fai_tv_question"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/bg_input_0_xml"
+                android:gravity="top"
+                android:hint="请输入您想咨询的问题"
+                android:inputType="textMultiLine"
+                android:paddingBottom="12dip"
+                android:paddingLeft="24dip"
+                android:paddingRight="12dip"
+                android:paddingTop="12dip" />
+
+            <TextView
+                android:id="@+id/fai_tv_up"
+                style="@style/Text.Large1.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fai_et_question"
+                android:layout_marginLeft="34dip"
+                android:layout_marginTop="12dip"
+                android:text="上传病例/检查单/图片" />
+
+            <Button
+                android:id="@+id/fai_btn_up"
+                style="@style/Text.Mid1.White"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_below="@+id/fai_et_question"
+                android:layout_marginLeft="34dip"
+                android:layout_marginTop="12dip"
+                android:layout_toRightOf="@+id/fai_tv_up"
+                android:background="@drawable/bg_btn_blue_xml"
+                android:text="上传图片"
+                android:visibility="gone" />
+
+            <HorizontalScrollView
+                android:id="@+id/fai_ibtn_up"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fai_tv_up"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:id="@+id/img_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dip"
+                    android:paddingLeft="34dip">
+
+                    <Button
+                        android:id="@+id/fai_btn_add"
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:background="@drawable/ic_up" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/fai_btn_ok"
+                style="@style/Text.Large.White"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@+id/fai_ibtn_up"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/bg_btn_blue_xml"
+                android:text="提交" />
+
+            <TextView
+                android:id="@+id/fai_tv_cq"
+                style="@style/Text.Mid1.blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fai_btn_ok"
+                android:layout_marginLeft="34dip"
+                android:layout_marginTop="12dip"
+                android:text="常见问题咨询" />
+
+            <com.bigd.utl.InListView
+                android:id="@+id/fai_lv_cq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fai_tv_cq"
+                android:divider="@null"></com.bigd.utl.InListView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/f_ask_index.xml -->

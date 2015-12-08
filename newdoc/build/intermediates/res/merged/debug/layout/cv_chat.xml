@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/c_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clickable="true" >
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height_1" />
+
+    <RelativeLayout
+        android:id="@+id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#dcdcdc" >
+
+        <RelativeLayout
+            android:id="@+id/inputBar_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/bg_input_bar_xml" >
+
+            <FrameLayout
+                android:id="@+id/btn_sound_wrap"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone" >
+
+                <ImageButton
+                    android:id="@+id/btn_sound"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:padding="10dip"
+                    android:src="@drawable/btn_sound" />
+
+                <ImageButton
+                    android:id="@+id/btn_kb"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:padding="10dip"
+                    android:src="@drawable/btn_kb"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_send_wrap"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" >
+
+                <ImageButton
+                    android:id="@+id/btn_add"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:padding="10dip"
+                    android:src="@drawable/btn_add"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="50dip"
+                    android:layout_height="36dip"
+                    android:layout_marginRight="0dip"
+                    android:layout_marginTop="7dip"
+                    android:background="@drawable/btn_login_bg2_xml"
+                    android:text="发送"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_mid1" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/inputArea"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/btn_send_wrap"
+                android:layout_toRightOf="@+id/btn_sound_wrap" >
+
+                <RelativeLayout
+                    android:id="@+id/aio_input_send_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip" >
+
+                    <EditText
+                        android:id="@+id/input"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toLeftOf="@+id/face_switch_btn"
+                        android:background="@drawable/bg_chat_input"
+                        android:imeActionLabel="aaaaaa"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:textColor="@color/black"
+                        android:textSize="16.0sp" />
+
+                    <ImageButton
+                        android:id="@+id/face_switch_btn"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:contentDescription="@null"
+                        android:padding="10dip"
+                        android:src="@drawable/btn_face"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_add_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginRight="0dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/btn_pop_photo_xml"
+                    android:text="按住	说话"
+                    android:textSize="@dimen/ts_small"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/face_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputBar_1"
+            android:background="#fff0f0f0"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/face_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="120.0dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="#0000"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/main_add"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip"
+            android:layout_below="@+id/inputBar_1"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="#fff0f0f0"
+            android:numColumns="4"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:visibility="gone" >
+        </GridView>
+    </RelativeLayout>
+
+    <com.lee.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/msg_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inputBar"
+        android:layout_below="@+id/title_bar"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="normal" />
+
+    <ImageView
+        android:id="@+id/cc_img_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dip" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/cv_chat.xml -->

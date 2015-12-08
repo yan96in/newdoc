@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <RelativeLayout
+        android:id="@+id/fdrdi_rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/fdrdi_iv_head"
+            android:layout_width="74dip"
+            android:layout_height="90dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/ic_tem_head" />
+
+        <TextView
+            android:id="@+id/fdrdi_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@+id/fdrdi_iv_head"
+            android:text="张三"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fdrdi_tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fdrdi_tv_name"
+            android:layout_toRightOf="@+id/fdrdi_iv_head"
+            android:text="xxxxxxxxxxxxxx\n科室：xxx\n擅长：xxxx\n学历：xxxx\n"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fdrdi_rl_info"
+        android:layout_marginTop="8dip"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/fdrdi_rl_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fdrdi_tv_00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="24dip"
+                android:layout_marginTop="24dip"
+                android:text="教育背景"
+                android:textColor="@color/bg_title"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/fdrdi_tv_line_0"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/fdrdi_tv_00"
+                android:layout_marginLeft="24dip"
+                android:layout_marginRight="24dip"
+                android:layout_marginTop="12dip"
+                android:background="@color/bg_def" />
+
+            <TextView
+                android:id="@+id/fdrdi_tv_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fdrdi_tv_line_0"
+                android:layout_marginLeft="24dip"
+                android:layout_marginTop="12dip"
+                android:text="XXXXXXXXXX"
+                android:textSize="10dip" />
+
+            <TextView
+                android:id="@+id/fdrdi_tv_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fdrdi_tv_01"
+                android:layout_marginLeft="24dip"
+                android:layout_marginTop="24dip"
+                android:text="从医经验"
+                android:textColor="@color/bg_title"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/fdrdi_tv_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/fdrdi_tv_10"
+                android:layout_marginLeft="24dip"
+                android:layout_marginRight="24dip"
+                android:layout_marginTop="12dip"
+                android:background="@color/bg_def" />
+
+            <TextView
+                android:id="@+id/fdrdi_tv_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fdrdi_tv_line_1"
+                android:layout_marginLeft="24dip"
+                android:layout_marginTop="12dip"
+                android:text="XXXXXXXXXX"
+                android:textSize="10dip" />
+
+            <TextView
+                android:id="@+id/fdrdi_tv_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fdrdi_tv_11"
+                android:layout_marginLeft="24dip"
+                android:layout_marginTop="24dip"
+                android:text="科研成果"
+                android:textColor="@color/bg_title"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/fdrdi_tv_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/fdrdi_tv_20"
+                android:layout_marginLeft="24dip"
+                android:layout_marginRight="24dip"
+                android:layout_marginTop="12dip"
+                android:background="@color/bg_def" />
+
+            <TextView
+                android:id="@+id/fdrdi_tv_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fdrdi_tv_line_2"
+                android:layout_marginLeft="24dip"
+                android:layout_marginTop="12dip"
+                android:text="XXXXXXXXXX"
+                android:textSize="10dip" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/f_doc_room_doc_info.xml -->

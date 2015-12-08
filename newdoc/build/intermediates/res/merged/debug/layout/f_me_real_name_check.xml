@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <EditText
+        android:id="@+id/fmrnc_name"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/white"
+        android:drawablePadding="15dip"
+        android:hint="姓名"
+        android:paddingLeft="18dip" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fmrnc_name"
+        android:background="@color/stoke_dark" />
+
+    <EditText
+        android:id="@+id/fmrnc_id_number"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/line"
+        android:background="@color/white"
+        android:drawablePadding="15dip"
+        android:hint="身份证"
+        android:inputType="number"
+        android:paddingLeft="18dip" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fmrnc_id_number"
+        android:background="@color/stoke_dark" />
+
+    <EditText
+        android:id="@+id/fmrnc_social_number"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/line2"
+        android:background="@color/white"
+        android:drawablePadding="15dip"
+        android:hint="社保"
+        android:inputType="number"
+        android:paddingLeft="18dip" />
+
+    <TextView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fmrnc_social_number"
+        android:background="@color/stoke_dark" />
+
+    <Button
+        android:id="@+id/fmrnc_btn_ok"
+        style="@style/Text.Large.White"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/line3"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bg_btn_blue_xml"
+        android:text="提交" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/f_me_real_name_check.xml -->

@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@color/white">
+
+    <RadioButton
+        android:id="@+id/ibp_rb_name"
+        style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@android:color/transparent"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center"
+        android:text="腹部"
+        android:textSize="@dimen/ts_large" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/item_body_point.xml -->

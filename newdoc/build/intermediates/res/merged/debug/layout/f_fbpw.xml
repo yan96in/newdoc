@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <EditText
+        android:id="@+id/fsu_id"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_id"
+        android:drawablePadding="15dip"
+        android:hint="请输入手机号码"
+        android:paddingLeft="18dip" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fsu_id"
+        android:background="@color/stoke_dark" />
+
+    <EditText
+        android:id="@+id/fsu_pw"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/line"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_pw"
+        android:drawablePadding="15dip"
+        android:hint="新密码"
+        android:inputType="textPassword"
+        android:paddingLeft="18dip" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fsu_pw"
+        android:background="@color/stoke_dark" />
+
+    <EditText
+        android:id="@+id/fsu_rpw"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/line2"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_pw"
+        android:drawablePadding="15dip"
+        android:hint="确认新密码"
+        android:inputType="textPassword"
+        android:paddingLeft="18dip" />
+
+    <TextView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fsu_rpw"
+        android:background="@color/stoke_dark" />
+
+    <EditText
+        android:id="@+id/fsu_check"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/line3"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_pw"
+        android:drawablePadding="15dip"
+        android:hint="验证码"
+        android:inputType="textPassword"
+        android:paddingLeft="18dip" />
+
+    <Button
+        android:id="@+id/fsu_btn_check"
+        style="@style/Text.Mid1.White"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line3"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/bg_btn_blue_xml"
+        android:text="获取验证码" />
+
+    <TextView
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fsu_check"
+        android:background="@color/stoke_dark" />
+
+    <Button
+        android:id="@+id/fsu_btn_sign_up"
+        style="@style/Text.Large.White"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/line4"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bg_btn_blue_xml"
+        android:text="修改密码" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/f_fbpw.xml -->

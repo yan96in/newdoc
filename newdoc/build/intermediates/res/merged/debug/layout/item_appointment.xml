@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_def"
+    android:paddingBottom="4dip"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="4dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_item_xml"
+        android:paddingBottom="10dip"
+        android:paddingLeft="0.3dip"
+        android:paddingRight="0.3dip"
+        android:paddingTop="3dip" >
+
+        <ImageView
+            android:id="@+id/ia_iv_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/ic_me_appointment" />
+
+        <TextView
+            android:id="@+id/ia_tv_name"
+            style="@style/Text.Large.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@+id/ia_iv_room"
+            android:text="xxxx诊室" />
+
+        <ImageView
+            android:id="@+id/ia_iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ia_tv_name"
+            android:layout_marginLeft="24dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@+id/ia_tv_name"
+            android:background="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/ia_tv_location"
+            style="@style/Text.Mid1.lightgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ia_iv_location"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="12dip"
+            android:layout_toLeftOf="@+id/ia_zw"
+            android:layout_toRightOf="@+id/ia_iv_location"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/ia_tv_catalog"
+            style="@style/Text.Mid1.darkgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ia_tv_name"
+            android:layout_marginLeft="18dip"
+            android:layout_marginTop="6dip"
+            android:layout_toRightOf="@+id/ia_iv_room"
+            android:text="科室：xxxxxxxx" />
+
+        <TextView
+            android:id="@+id/ia_tv_doc"
+            style="@style/Text.Mid1.darkgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ia_tv_name"
+            android:layout_marginLeft="18dip"
+            android:layout_marginTop="6dip"
+            android:layout_toRightOf="@+id/ia_tv_catalog"
+            android:text="医生：xxxxxxxx" />
+
+        <TextView
+            android:id="@+id/ia_tv_time"
+            style="@style/Text.Mid1.darkgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ia_tv_catalog"
+            android:layout_marginLeft="18dip"
+            android:layout_marginTop="6dip"
+            android:layout_toRightOf="@+id/ia_iv_room"
+            android:text="预约时间：xxxxxxxx" />
+
+        <Button
+            android:id="@+id/ia_btn_com"
+            style="@style/Text.Small.White"
+            android:layout_width="wrap_content"
+            android:layout_height="18dip"
+            android:layout_alignBottom="@+id/ia_tv_time"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ia_tv_time"
+            android:background="@drawable/bg_btn_green_xml"
+            android:drawablePadding="4dip"
+            android:paddingLeft="6dip"
+            android:paddingRight="10dip"
+            android:text="评价"
+            android:textSize="8dip" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/item_appointment.xml -->

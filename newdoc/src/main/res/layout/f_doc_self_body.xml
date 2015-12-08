@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.zcw.togglebutton.ToggleButton
+        android:id="@+id/fdsb_tb"
+        android:layout_width="54dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip" >
+    </com.zcw.togglebutton.ToggleButton>
+
+    <ImageView
+        android:id="@+id/fdsb_iv_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fdsb_tb"
+        android:layout_marginBottom="10dip"
+        android:src="@drawable/ic_body_0" />
+
+</RelativeLayout>

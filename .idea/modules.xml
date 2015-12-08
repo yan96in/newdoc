@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/newdoc/newdoc.iml" filepath="$PROJECT_DIR$/newdoc/newdoc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newdoc9.iml" filepath="$PROJECT_DIR$/newdoc9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toggleButtonLib/toggleButtonLib.iml" filepath="$PROJECT_DIR$/toggleButtonLib/toggleButtonLib.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,5 @@
+<ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_view"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_gravity="center"></ProgressBar><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/umeng_comm_base_loading_view.xml -->

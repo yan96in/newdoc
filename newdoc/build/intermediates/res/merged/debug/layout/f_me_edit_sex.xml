@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <RadioGroup
+        android:id="@+id/fmes_rg_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_below="@+id/title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/bg_input_0_xml"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_0"
+            style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="男"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_1"
+            style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="女"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/fmes_btn_ok"
+        style="@style/Text.Large.White"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/fmes_rg_sex"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bg_btn_blue_xml"
+        android:text="确定" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/f_me_edit_sex.xml -->

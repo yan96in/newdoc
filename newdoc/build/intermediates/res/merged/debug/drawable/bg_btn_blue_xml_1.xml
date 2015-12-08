@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+        android:bottomLeftRadius="6dp"
+        android:bottomRightRadius="6dp"
+        android:topLeftRadius="6dp"
+        android:topRightRadius="6dp" />
+    <!-- 设置圆角半径 -->
+    <solid android:color="#1ba3e6" />
+    <!-- 填充的颜色 -->
+
+</shape><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/drawable/bg_btn_blue_xml_1.xml -->

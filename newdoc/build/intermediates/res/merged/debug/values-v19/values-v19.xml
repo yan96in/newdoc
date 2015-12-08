@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/values-v19/dimens.xml -->
+    <eat-comment/>
+    <dimen name="title_height">75dp</dimen>
+    <dimen name="title_height_1">50dp</dimen>
+    <!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/values-v19/styles.xml -->
+    <eat-comment/>
+    <style name="FullBleedTheme" parent="android:Theme.Holo.Light.NoActionBar.TranslucentDecor">
+        <!-- API 19 theme customizations can go here. -->
+
+    </style>
+</resources>

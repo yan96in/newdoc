@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_wrap"
+    android:layout_width="150dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_btn_def_xml">
+
+    <TextView
+        android:id="@+id/id_tv_department"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dip"
+        android:text="XX科室" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/id_tv_department"
+        android:background="@color/stoke_dark" />
+
+</RelativeLayout>

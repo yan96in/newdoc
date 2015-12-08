@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout_title"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/bg_title">
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="17dip"
+        android:layout_marginTop="25dip"
+        android:background="@null"
+        android:drawableLeft="@drawable/ic_back"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts_mid"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/Text.Large.White"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="20dip"
+        android:text="标题"></TextView>
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="6dip"
+        android:layout_marginRight="17dip"
+        android:layout_marginTop="25dip"
+        android:background="@null"
+        android:text="@null"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts_mid"
+        android:visibility="gone" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/moudle_title.xml -->

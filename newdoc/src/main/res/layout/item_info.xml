@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_pop"
+    android:padding="15dip">
+
+    <ImageView
+        android:id="@+id/ii_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/ic_mask" />
+
+    <TextView
+        android:id="@+id/ii_tv_name"
+        style="@style/Text.Mid0.darkgray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ii_icon"
+        android:text="xxx诊室" />
+
+    <TextView
+        android:id="@+id/ii_tv_location"
+        style="@style/Text.Mid1.darkgray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ii_tv_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dip"
+        android:layout_toRightOf="@+id/ii_icon"
+        android:text="xxx街道xx号" />
+
+    <TextView
+        android:id="@+id/ii_iv_phone_str"
+        style="@style/Text.Mid1.darkgray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ii_tv_location"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/ii_icon"
+        android:text="拨打电话：" />
+
+    <TextView
+        android:id="@+id/ii_iv_phone"
+        style="@style/Text.Mid1.blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ii_tv_location"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/ii_iv_phone_str"
+        android:text="139000000xx" />
+
+    <Button
+        android:id="@+id/ii_btn_info"
+        style="@style/Text.Mid0.White"
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:layout_below="@+id/ii_iv_phone"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bg_btn_xml"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:text="诊室简介" />
+
+</RelativeLayout>

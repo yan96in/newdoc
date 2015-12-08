@@ -1,0 +1,179 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Default.NoTitleBar" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Button0">
+        <item name="android:background">@drawable/bg_btn_blue1_xml</item>
+        <item name="android:textColor">@drawable/text_color_blue_xml</item>
+    </style>
+
+    <style name="RButton0">
+        <item name="android:background">@drawable/bg_rbtn_blue_xml</item>
+        <item name="android:textColor">@drawable/blue_rbtn_reverse_drawable</item>
+    </style>
+
+    <style name="Text" />
+
+    <style name="Text.Large" parent="@style/Text">
+        <item name="android:textSize">@dimen/ts_large</item>
+    </style>
+
+    <style name="Text.Large1" parent="@style/Text">
+        <item name="android:textSize">@dimen/ts_large1</item>
+    </style>
+
+    <style name="Text.Mid0" parent="@style/Text">
+        <item name="android:textSize">@dimen/ts_mid</item>
+    </style>
+
+    <style name="Text.Mid0.White" parent="@style/Text.Mid0">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Mid0.gray" parent="@style/Text.Mid0">
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="Text.Mid0.darkgray" parent="@style/Text.Mid0">
+        <item name="android:textColor">@color/text_gray_dark</item>
+    </style>
+
+    <style name="Text.Mid1" parent="@style/Text">
+        <item name="android:textSize">@dimen/ts_mid1</item>
+    </style>
+
+    <style name="Text.Mid1.gray" parent="@style/Text.Mid1">
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="Text.Mid1.darkgray" parent="@style/Text.Mid1">
+        <item name="android:textColor">@color/text_gray_dark</item>
+    </style>
+
+    <style name="Text.Mid1.black" parent="@style/Text.Mid1">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Text.Mid1.lightgray" parent="@style/Text.Mid1">
+        <item name="android:textColor">@color/text_gray_light</item>
+    </style>
+
+    <style name="Text.Mid1.blue" parent="@style/Text.Mid1">
+        <item name="android:textColor">@color/bg_title</item>
+    </style>
+
+    <style name="Text.Mid1.White" parent="@style/Text.Mid1">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Large.White" parent="@style/Text.Large">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Large.Black" parent="@style/Text.Large">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Text.Large.darkgray" parent="@style/Text.Large">
+        <item name="android:textColor">@color/text_gray_dark</item>
+    </style>
+
+    <style name="Text.Large1.darkgray" parent="@style/Text.Large1">
+        <item name="android:textColor">@color/text_gray_dark</item>
+    </style>
+
+    <style name="Text.Large1.lightgray" parent="@style/Text.Large1">
+        <item name="android:textColor">@color/text_gray_light</item>
+    </style>
+
+    <style name="Text.Large1.black" parent="@style/Text.Large1">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Text.Small" parent="@style/Text">
+        <item name="android:textSize">@dimen/ts_small</item>
+    </style>
+
+    <style name="Text.Small.Blue" parent="@style/Text.Small">
+        <item name="android:textColor">@color/bg_title</item>
+    </style>
+
+    <style name="Text.Small.White" parent="@style/Text.Small">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Large.Blue2Gray" parent="@style/Text.Large">
+        <item name="android:textColor">@drawable/blue_tabbargray_reverse_drawable</item>
+    </style>
+
+    <style name="Btn" parent="@style/Text.Mid0.White">
+        <item name="android:background">@drawable/bg_btn_xml</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+    </style>
+
+    <style name="NetDisk" />
+
+    <style name="NetDisk.Unified" parent="@style/NetDisk" />
+
+    <style name="NetDisk.Unified.Smaller" parent="@style/NetDisk.Unified">
+        <item name="android:textSize">@dimen/ts_small</item>
+    </style>
+
+    <style name="NetDisk.Unified.Smaller.Red2TabBarGray" parent="@style/NetDisk.Unified.Smaller">
+        <item name="android:textColor">@drawable/red_tabbargray_reverse_drawable</item>
+    </style>
+
+    <style name="NetDisk.Unified.Smaller.Blue2TabBarGray" parent="@style/NetDisk.Unified.Smaller">
+        <item name="android:textColor">@drawable/blue_tabbargray_reverse_drawable</item>
+    </style>
+
+    <style name="NetDisk.Unified.Large.Blue2TabBarGray" parent="@style/NetDisk.Unified">
+        <item name="android:textSize">@dimen/ts_large</item>
+        <item name="android:textColor">@drawable/blue_tabbargray_reverse_drawable</item>
+    </style>
+
+    <style name="AnimTop" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/scale_down</item>
+        <item name="android:windowExitAnimation">@anim/scale_up</item>
+    </style>
+
+    <style name="AnimFade" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent2</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

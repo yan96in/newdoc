@@ -1,0 +1,12 @@
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RButton0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="5dip"
+    android:button="@null"
+    android:gravity="center"
+    android:padding="8dip"
+    android:text="8:00 - 11:30">
+
+</RadioButton><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/item_slot.xml -->

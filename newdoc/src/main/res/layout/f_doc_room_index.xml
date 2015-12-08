@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <LinearLayout
+        android:id="@+id/acri_ll_menu_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/bg_white"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="12dip">
+
+        <Button
+            android:id="@+id/acri_btn_doc_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_doc_self"
+            android:paddingBottom="14dip"
+            android:text="@string/doc_self"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="@dimen/ts_mid1" />
+
+        <Button
+            android:id="@+id/acri_btn_qa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_qa"
+            android:paddingBottom="14dip"
+            android:text="@string/q_a"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="@dimen/ts_mid1" />
+
+        <Button
+            android:id="@+id/acri_btn_bespeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_bespeak"
+            android:paddingBottom="14dip"
+            android:text="@string/bespeak"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="@dimen/ts_mid1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fdri_tv_title"
+        style="@style/Text.Mid0.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_below="@+id/acri_ll_menu_wrap"
+        android:layout_marginTop="20dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="最新资讯" />
+
+    <TextView
+        android:id="@+id/fdri_tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fdri_tv_title"
+        android:background="@color/text_gray_light" />
+
+    <RelativeLayout
+        android:id="@+id/tem_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fdri_tv_line"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/tem_iv_0"
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/tem0" />
+
+        <TextView
+            style="@style/Text.Mid0.darkgray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tem_iv_0"
+            android:paddingLeft="10dip"
+            android:text="心医健康苗医苗药公益之旅" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tem_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tem_0"
+        android:layout_marginTop="10dip"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/tem_iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/tem1" />
+
+        <TextView
+            style="@style/Text.Mid0.darkgray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_toRightOf="@+id/tem_iv_1"
+            android:paddingLeft="10dip"
+            android:text="易经与中医学的融合之道" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

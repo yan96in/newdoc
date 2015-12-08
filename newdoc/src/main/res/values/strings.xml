@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">newdoc</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，应用程序出现错误，即将退出。\n请选择邮件的方式将此错误报告提交给我，我会尽快修复这个问题，谢谢！</string>
+    <string name="submit_report">提交报告</string>
+    <string name="cm">社区交流</string>
+    <string name="cl">新医诊室</string>
+    <string name="me">个人中心</string>
+    <string name="doc_self">新医自诊</string>
+    <string name="q_a">在线问答</string>
+    <string name="bespeak">预约挂号</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <!--
+    <item name="tag_province" type="id"></item>
+    <item name="tag_city" type="id"></item>
+    <item name="tag_ccounty" type="id"></item>
+    -->
+
+
+</resources>

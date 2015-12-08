@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/transparent" />
+    <!-- 填充的颜色 -->
+
+</shape><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/drawable/bg_btn_a_xml_0.xml -->

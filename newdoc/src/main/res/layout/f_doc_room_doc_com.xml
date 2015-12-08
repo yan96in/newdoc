@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <include
+        android:id="@+id/fdrdc_rl_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        layout="@layout/moudle_doc" />
+
+    <RelativeLayout
+        android:id="@+id/fdrdc_rl_com"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/fdrdc_rl_info"
+        android:layout_marginTop="8dip"
+        android:background="@color/white">
+
+        <RadioGroup
+            android:id="@+id/fdrdc_rg_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/fdrdc_rb_com"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip"
+                android:text="用户评价"
+                android:textColor="@drawable/blue_tabbargray_reverse_drawable"
+                android:textSize="@dimen/ts_mid1" />
+
+            <RadioButton
+                android:id="@+id/fdrdc_rb_my_com"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip"
+                android:text="我的评价"
+                android:textColor="@drawable/blue_tabbargray_reverse_drawable"
+                android:textSize="@dimen/ts_mid1" />
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fdrdc_rg_menu"
+            android:layout_marginTop="4dip"
+            android:background="@color/tab_bg"
+            android:contentDescription="@null" />
+
+        <cn.smilecity.viewpagerindicator.UnderlinePageIndicator
+            android:id="@+id/fdrdc_indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/fdrdc_rg_menu"
+            android:layout_marginTop="3dip"
+            android:background="@null" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fdrdc_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fdrdc_indicator" />
+    </RelativeLayout>
+
+</RelativeLayout>

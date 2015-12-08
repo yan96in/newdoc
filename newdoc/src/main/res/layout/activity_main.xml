@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_def"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" />
+
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_def"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="0.5dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="3.0dip">
+
+        <RadioButton
+            android:id="@+id/radio_cm"
+            style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/radio_cm"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="6.0dip"
+            android:text="@string/cm" />
+
+        <RadioButton
+            android:id="@+id/radio_cl"
+            style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_cl"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="6.0dip"
+            android:text="@string/cl" />
+
+        <RadioButton
+            android:id="@+id/radio_me"
+            style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_me"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="6.0dip"
+            android:text="@string/me" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_stoke"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_above="@+id/tab_menu"
+        android:background="@color/stoke_dark" />
+
+</RelativeLayout>

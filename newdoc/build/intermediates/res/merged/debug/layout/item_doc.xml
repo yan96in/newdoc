@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_def"
+    android:paddingBottom="8dip"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="0dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_xml"
+        android:paddingBottom="10dip"
+        android:paddingLeft="0.3dip"
+        android:paddingRight="0.3dip"
+        android:paddingTop="3dip">
+
+        <include
+            android:id="@+id/id_m_doc"
+            layout="@layout/moudle_doc" />
+
+        <TextView
+            android:id="@+id/id_zw"
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:layout_below="@+id/id_m_doc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-8dip"
+            android:background="@color/stoke_light" />
+
+        <TextView
+            android:id="@+id/id_tv_time"
+            style="@style/Text.Small.Blue"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_below="@+id/id_m_doc"
+            android:layout_marginRight="27dip"
+            android:layout_marginTop="-10dip"
+            android:layout_toLeftOf="@+id/id_zw"
+            android:gravity="center_vertical"
+            android:text="明天上午可预约" />
+
+        <Button
+            android:id="@+id/id_btn_speak"
+            style="@style/Text.Mid0.White"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_below="@+id/id_m_doc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="27dip"
+            android:layout_marginTop="-10dip"
+            android:layout_toRightOf="@+id/id_zw"
+            android:background="@drawable/bg_btn_xml"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:text="预约挂号" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/item_doc.xml -->

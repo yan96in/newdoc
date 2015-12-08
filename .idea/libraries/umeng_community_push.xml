@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="umeng_community_push">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/newdoc/libs/umeng_community_push.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

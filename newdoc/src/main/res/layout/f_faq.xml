@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <TextView
+        android:id="@+id/ff_tv_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dip"
+        style="@style/Text.Large1.darkgray"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar" />
+
+</RelativeLayout>

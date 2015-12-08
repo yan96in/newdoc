@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/fdrb_rl_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="20dip" >
+
+                <include
+                    android:id="@+id/ifdrb_m_doc"
+                    layout="@layout/moudle_doc" />
+
+                <Button
+                    android:id="@+id/fdrb_btn_info"
+                    style="@style/Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_below="@+id/ifdrb_m_doc"
+                    android:layout_marginLeft="110dip"
+                    android:background="@drawable/bg_btn_green_xml"
+                    android:text="医生简介" />
+
+                <Button
+                    android:id="@+id/fdrb_btn_com"
+                    style="@style/Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_below="@+id/ifdrb_m_doc"
+                    android:layout_marginLeft="8dip"
+                    android:layout_toRightOf="@+id/fdrb_btn_info"
+                    android:background="@drawable/bg_btn_org_xml"
+                    android:text="用户评价" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fdrb_pager_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+id/fdrb_rl_info"
+                android:background="@color/bg_def" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/fdrb_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dip"
+                    android:background="#FAE462" />
+
+                <ImageButton
+                    android:id="@+id/fdrb_btn_left"
+                    android:layout_width="40dip"
+                    android:layout_height="60dip"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bg_btn_a_xml"
+                    android:gravity="center"
+                    android:padding="15dip"
+                    android:src="@drawable/ic_left" />
+
+                <ImageButton
+                    android:id="@+id/fdrb_btn_right"
+                    android:layout_width="40dip"
+                    android:layout_height="60dip"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_btn_a_xml"
+                    android:gravity="center"
+                    android:padding="15dip"
+                    android:src="@drawable/ic_right" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/fdrb_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_below="@+id/fdrb_pager_wrap"
+                android:layout_margin="7dip"
+                android:horizontalSpacing="2dp"
+                android:numColumns="7"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="3dp" >
+            </GridView>
+
+            <TextView
+                android:id="@+id/fdrb_tv_tip"
+                style="@style/Text.Mid1.darkgray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fdrb_calendar"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="0dip"
+                android:gravity="left"
+                android:paddingLeft="15dip"
+                android:text="服务流程：免费预约>准时报道>医生安排加号" />
+
+            <RadioGroup
+                android:id="@+id/fdrb_rg_radio"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_below="@+id/fdrb_tv_tip"
+                android:orientation="horizontal"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" >
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/fdrb_btn_appointment"
+                style="@style/Text.Large.White"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_below="@+id/fdrb_rg_radio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/bg_btn_blue_xml"
+                android:text="预约" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

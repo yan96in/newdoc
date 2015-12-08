@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fmi_rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="87dip"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/Text.Large1.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="头像" />
+
+            <ImageView
+                android:id="@+id/fmi_iv_head"
+                android:layout_width="63dip"
+                android:layout_height="63dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="20dip"
+                android:src="@drawable/ic_tem_head" />
+
+            <ImageView
+                android:id="@+id/fmi_iv_head_mask"
+                android:layout_width="63dip"
+                android:layout_height="63dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="20dip"
+                android:src="@drawable/ic_mask_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/stoke_light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fmi_rl_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/bg_btn_def_xml">
+
+            <TextView
+                style="@style/Text.Large1.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="账号" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dip"
+                android:src="@drawable/ic_right" />
+
+            <TextView
+                android:id="@+id/fmi_tv_name"
+                style="@style/Text.Large1.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dip"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/stoke_light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fmi_rl_sex"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/bg_btn_def_xml">
+
+            <TextView
+                style="@style/Text.Large1.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="性别" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dip"
+                android:src="@drawable/ic_right" />
+
+            <TextView
+                android:id="@+id/fmi_tv_sex"
+                style="@style/Text.Large1.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dip"
+                android:text="男" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/stoke_light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fmi_rl_check"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/bg_btn_def_xml">
+
+            <TextView
+                style="@style/Text.Large1.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="实名认证" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dip"
+                android:src="@drawable/ic_right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/stoke_light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fmi_rl_rpw"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/bg_btn_def_xml">
+
+            <TextView
+                style="@style/Text.Large1.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="修改密码" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dip"
+                android:src="@drawable/ic_right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/stoke_light" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

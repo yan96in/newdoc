@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="47dip">
+
+    <CheckBox
+        android:id="@+id/idic_btn"
+        style="@style/Text.Mid1.black"
+        android:layout_width="fill_parent"
+        android:layout_height="47dip"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:button="@null"
+        android:gravity="center"
+        android:text="a" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/item_day_in_calendar.xml -->

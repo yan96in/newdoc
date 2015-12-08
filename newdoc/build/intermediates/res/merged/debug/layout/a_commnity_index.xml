@@ -1,0 +1,8 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="25dip"
+    android:id="@+id/aci_content"
+    android:layout_height="match_parent">
+
+
+</FrameLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/a_commnity_index.xml -->

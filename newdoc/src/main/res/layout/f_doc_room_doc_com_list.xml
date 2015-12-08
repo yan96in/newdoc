@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <com.lee.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/fdrdcl_plv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"></com.lee.pullrefresh.ui.PullToRefreshListView>
+
+</RelativeLayout>

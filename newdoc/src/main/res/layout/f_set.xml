@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <TextView
+        android:id="@+id/fs_agreement"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="用户协议"
+        android:paddingLeft="18dip" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fs_agreement"
+        android:background="@color/stoke_dark" />
+
+    <TextView
+        android:id="@+id/fs_about_us"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/line"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="关于我们"
+        android:paddingLeft="18dip" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fs_about_us"
+        android:background="@color/stoke_dark" />
+
+    <Button
+        android:id="@+id/fs_btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/bg_btn_blue1_xml"
+        android:text="注销"
+        android:textColor="@drawable/text_color_blue_xml"
+        android:textSize="16sp" />
+
+</RelativeLayout>

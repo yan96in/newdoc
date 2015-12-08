@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+        android:bottomLeftRadius="3dp"
+        android:bottomRightRadius="3dp"
+        android:topLeftRadius="3dp"
+        android:topRightRadius="3dp" />
+    <!-- 设置圆角半径 -->
+    <solid android:color="@color/white" />
+    <!-- 填充的颜色 -->
+    <stroke
+        android:width="0.3dp"
+        android:color="@color/stoke_dark" />
+
+</shape><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/drawable/bg_item_xml.xml -->

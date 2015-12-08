@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <RelativeLayout
+        android:id="@+id/fdrm_rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginBottom="0dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/white"
+        android:paddingBottom="15dip">
+
+        <ImageView
+            android:id="@+id/ii_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/ic_mask" />
+
+        <TextView
+            android:id="@+id/fdrm_tv_name"
+            style="@style/Text.Large.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@+id/ii_icon"
+            android:text="xxx诊室"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ii_icon_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fdrm_tv_name"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@+id/ii_icon"
+            android:background="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/fdrm_tv_location"
+            style="@style/Text.Mid1.darkgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fdrm_tv_name"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@+id/ii_icon_1"
+            android:text="xxx街道xx号" />
+
+        <TextView
+            android:id="@+id/fdrm_tv_functions"
+            style="@style/Text.Mid1.darkgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fdrm_tv_location"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@+id/ii_icon_1"
+            android:text="主治：XXXXXXX" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/fdrm_btn_department"
+        style="@style/Text.Mid1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fdrm_rl_info"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/white"
+        android:drawableRight="@drawable/ic_select_0"
+        android:paddingLeft="24dip"
+        android:paddingRight="24dip"
+        android:text="全部科室" />
+
+    <com.lee.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/fdrm_plv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fdrm_btn_department"
+        android:layout_marginTop="8dip"
+        android:scrollbars="none"></com.lee.pullrefresh.ui.PullToRefreshListView>
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/f_doc_room_main.xml -->

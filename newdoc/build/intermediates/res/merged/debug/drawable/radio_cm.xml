@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false" android:drawable="@drawable/ic_cm_0" />
+    <item android:state_checked="true" android:drawable="@drawable/ic_cm_1" />
+</selector>
+<!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/drawable/radio_cm.xml -->

@@ -1,0 +1,210 @@
+-injars 'C:\Users\Jiancheng\Desktop\newdoc9\newdoc\build\intermediates\multi-dex\debug\allclasses.jar'
+-outjars 'C:\Users\Jiancheng\Desktop\newdoc9\newdoc\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'D:\Users\Jiancheng\AppData\Local\Android\sdk\build-tools\23.0.1\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration 'C:\Users\Jiancheng\Desktop\newdoc9\newdoc\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class net.meluo.newdoc.app.NDApp {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class net.meluo.newdoc.activity.MainTabActivity {
+    <init>();
+}
+
+-keep class net.meluo.newdoc.activity.CommunityIndexActivity {
+    <init>();
+}
+
+-keep class net.meluo.newdoc.activity.ConsultationRoomIndexActivity {
+    <init>();
+}
+
+-keep class net.meluo.newdoc.activity.MeIndexActivity {
+    <init>();
+}
+
+-keep class net.meluo.newdoc.activity.ChatActivity {
+    <init>();
+}
+
+-keep class net.meluo.newdoc.wxapi.WXEntryActivity {
+    <init>();
+}
+
+-keep class com.meluo.newdoc.db.DiseaseProvider {
+    <init>();
+}
+
+-keep class cn.jpush.android.ui.PushActivity {
+    <init>();
+}
+
+-keep class cn.jpush.android.service.DownloadService {
+    <init>();
+}
+
+-keep class cn.jpush.android.service.PushService {
+    <init>();
+}
+
+-keep class cn.jpush.android.service.DaemonService {
+    <init>();
+}
+
+-keep class cn.jpush.android.service.PushReceiver {
+    <init>();
+}
+
+-keep class cn.jpush.android.service.AlarmReceiver {
+    <init>();
+}
+
+-keep class net.meluo.newdoc.receiver.MyReceiver {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.FeedsActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.PostFeedActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.ForwardActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.UserInfoActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.TopicDetailActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.FeedDetailActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.FindActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.SettingActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.LikeUsersActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.SearchActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.GuideActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.RelativeUserActivity {
+    <init>();
+}
+
+-keep class com.umeng.community.login.LoginActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.LocationFeedActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.AlbumActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.FollowedTopicActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.NotificationActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.NewMsgActivity {
+    <init>();
+}
+
+-keep class com.umeng.message.NotificationProxyBroadcastReceiver {
+    <init>();
+}
+
+-keep class com.umeng.message.SystemReceiver {
+    <init>();
+}
+
+-keep class com.umeng.message.MessageReceiver {
+    <init>();
+}
+
+-keep class com.umeng.message.ElectionReceiver {
+    <init>();
+}
+
+-keep class com.umeng.message.RegistrationReceiver {
+    <init>();
+}
+
+-keep class com.umeng.message.BootBroadcastReceiver {
+    <init>();
+}
+
+-keep class com.umeng.message.UmengService {
+    <init>();
+}
+
+-keep class com.umeng.message.UmengIntentService {
+    <init>();
+}
+
+-keep class com.umeng.message.UmengMessageIntentReceiverService {
+    <init>();
+}
+
+-keep class com.umeng.message.UmengDownloadResourceService {
+    <init>();
+}
+
+-keep class com.umeng.socialize.view.ShareActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.imagepicker.PhotoSelectorActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.imagepicker.PhotoPreviewActivity {
+    <init>();
+}
+
+-keep class com.umeng.comm.ui.activities.BrowserActivity {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

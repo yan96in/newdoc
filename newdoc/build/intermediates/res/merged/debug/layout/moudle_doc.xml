@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/md_iv_head"
+        android:layout_width="74dip"
+        android:layout_height="90dip"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/ic_tem_head" />
+
+    <ImageView
+        android:id="@+id/md_iv_m_head"
+        android:layout_width="74dip"
+        android:layout_height="90dip"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/m_head" />
+
+    <TextView
+        android:id="@+id/md_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="12dip"
+        android:layout_toRightOf="@+id/md_iv_head"
+        android:text="张医生"
+        android:textColor="@color/black"
+        android:textSize="@dimen/ts_large" />
+
+    <Button
+        android:id="@+id/md_btn_focus"
+        style="@style/Text.Small.White"
+        android:layout_width="50dip"
+        android:layout_height="18dip"
+        android:layout_alignBottom="@+id/md_tv_name"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/md_tv_name"
+        android:background="@drawable/bg_btn_yellow_xml"
+        android:text="关注"
+       
+        android:textSize="8dip" />
+
+    <TextView
+        android:id="@+id/md_tv_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/md_tv_name"
+        android:layout_marginLeft="18dip"
+        android:layout_toRightOf="@+id/md_iv_head"
+        android:text="耳鼻喉课"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/ts_mid" />
+
+    <TextView
+        android:id="@+id/md_tv_specialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/md_tv_department"
+        android:layout_marginLeft="18dip"
+        android:layout_toRightOf="@+id/md_iv_head"
+        android:text="耳科"
+        android:textColor="@color/text_gray" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/moudle_doc.xml -->

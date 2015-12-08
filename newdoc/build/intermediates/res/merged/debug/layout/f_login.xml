@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_def"
+    android:clickable="true">
+
+    <com.dadao.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <EditText
+        android:id="@+id/fl_id"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_id"
+        android:drawablePadding="15dip"
+        android:hint="登录名或手机号"
+        android:paddingLeft="18dip" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fl_id"
+        android:background="@color/stoke_dark" />
+
+    <EditText
+        android:id="@+id/fl_pw"
+        style="@style/Text.Large1.darkgray"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/line"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_pw"
+        android:drawablePadding="15dip"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:paddingLeft="18dip" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/fl_pw"
+        android:background="@color/stoke_dark" />
+
+    <Button
+        android:id="@+id/fl_btn_login"
+        style="@style/Text.Large.White"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/fl_pw"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bg_btn_blue_xml"
+        android:text="登录" />
+
+    <TextView
+        android:id="@+id/fl_tv_zw"
+        style="@style/Text.Small.Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_btn_login"
+        android:layout_marginLeft="27dip"
+        android:layout_marginTop="31dip"
+        android:text="其他登录方式" />
+
+    <ImageView
+        android:id="@+id/fl_btn_webchat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_btn_login"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@+id/fl_tv_zw"
+        android:src="@drawable/ic_webchat" />
+
+    <ImageView
+        android:id="@+id/fl_btn_sina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_btn_login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@+id/fl_btn_webchat"
+        android:src="@drawable/ic_sina"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/fl_btn_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_btn_login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@+id/fl_btn_sina"
+        android:src="@drawable/ic_qq"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/fl_btn_sign_up"
+        android:layout_width="60dip"
+        android:layout_height="34dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dip"
+        android:background="@drawable/bg_btn_blue1_xml"
+        android:text="注册"
+        android:textColor="@drawable/text_color_blue_xml"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/fl_btn_find_back_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dip"
+        android:layout_marginLeft="30dip"
+        android:layout_toRightOf="@+id/fl_btn_sign_up"
+        android:text="忘记密码？"
+        android:textColor="@drawable/text_color_blue_xml"
+        android:textSize="12sp" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/f_login.xml -->

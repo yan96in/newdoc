@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="40dip">
+
+    <ImageView
+        android:id="@+id/im_item_head"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/ic_tem_head" />
+
+    <TextView
+        android:id="@+id/im_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/im_item_head"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/im_item_head"
+        android:text="2014-02-01 12:23:12"
+        android:textColor="@color/text_gray2"
+        android:textSize="@dimen/ts_small" />
+
+    <TextView
+        android:id="@+id/im_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/im_item_time"
+        android:layout_below="@+id/im_item_time"
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/im_item_head"
+        android:background="@drawable/im_friend_bg"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="15dip"
+        android:paddingTop="5dip"
+        android:text="子贡问政。子曰：“足食，足兵（军备），民信之矣。”子贡曰：“必不得已而去，于斯三者何先？”曰：“去兵。”子贡曰：“必不得已而去。于斯二者何先？”曰：“去食。自古皆有死" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Jiancheng/Desktop/newdoc9/newdoc/src/main/res/layout/itm_chat_me.xml -->
